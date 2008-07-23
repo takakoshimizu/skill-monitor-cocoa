@@ -1,0 +1,175 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                cancelImplants = id; 
+                cancelLogin = id; 
+                closeTab = id; 
+                deleteSaved = id; 
+                displayImplants = id; 
+                doLogin = id; 
+                findCharIds = id; 
+                myAction = id; 
+                "new_character" = id; 
+                nextTab = id; 
+                prevTab = id; 
+                refreshData = id; 
+                saveImplants = id; 
+                showHideOverlay = id; 
+                showPieChart = id; 
+            }; 
+            CLASS = Application; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "all_timer" = NSTextField; 
+                chamod = NSSlider; 
+                "chamod_text" = NSTextField; 
+                "char_box" = NSBox; 
+                "char_charisma" = NSTextField; 
+                "char_image" = NSImageView; 
+                "char_intelligence" = NSTextField; 
+                "char_known_skills" = NSTextField; 
+                "char_memory" = NSTextField; 
+                "char_perception" = NSTextField; 
+                "char_race" = NSTextField; 
+                "char_total_sp" = NSTextField; 
+                "char_vskills" = NSTextField; 
+                "char_willpower" = NSTextField; 
+                "completion_field" = NSTextField; 
+                "completion_indicator" = NSProgressIndicator; 
+                "cur_training" = NSTextField; 
+                implantDisclosure = NSButton; 
+                "implant_window" = NSPanel; 
+                intmod = NSSlider; 
+                "intmod_text" = NSTextField; 
+                "loading_window" = NSWindow; 
+                loginTable = LoginTable; 
+                loginWindow = NSWindow; 
+                "login_apikey" = NSTextField; 
+                "login_charid" = NSComboBox; 
+                "login_save_box" = NSButton; 
+                "login_spinner" = NSProgressIndicator; 
+                "login_tab" = NSTableView; 
+                "login_userid" = NSTextField; 
+                mainWindow = NSWindow; 
+                memmod = NSSlider; 
+                "memmod_text" = NSTextField; 
+                "next_tab_button" = NSMenuItem; 
+                "overlay_button" = NSMenuItem; 
+                "overlay_complete" = NSTextField; 
+                "overlay_completion" = NSTextField; 
+                "overlay_cur_training" = NSTextField; 
+                "overlay_percent" = NSTextField; 
+                "overlay_portrait" = NSImageView; 
+                "overlay_window" = NSPanel; 
+                permod = NSSlider; 
+                "permod_text" = NSTextField; 
+                pieChart = SMPieChartView; 
+                pieChartWindow = NSPanel; 
+                "prev_tab_button" = NSMenuItem; 
+                skillgroups = NSTableView; 
+                skills = NSTableView; 
+                "sp_hour" = NSTextField; 
+                spinner = NSProgressIndicator; 
+                "startup_detail" = NSTextField; 
+                "tab_strip" = PSMTabBarControl; 
+                tabs = NSTabView; 
+                "training_timer" = NSTextField; 
+                wilmod = NSSlider; 
+                "wilmod_text" = NSTextField; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = HUDWindow; LANGUAGE = ObjC; SUPERCLASS = NSPanel; }, 
+        {CLASS = ItemAttributes; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = ItemList; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = LoginTable; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = NSApplication; LANGUAGE = ObjC; SUPERCLASS = NSResponder; }, 
+        {CLASS = NSBrowser; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
+        {CLASS = NSCell; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = NSDocumentController; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = NSImage; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = NSLevelIndicator; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
+        {CLASS = NSNextStepFrame; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {CLASS = NSObject; LANGUAGE = ObjC; }, 
+        {CLASS = NSOutlineView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
+        {CLASS = NSScroller; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
+        {CLASS = NSTableView; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
+        {CLASS = NSToolbarItemViewer; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {CLASS = NSToolbarView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {CLASS = PieChartDS; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = PlanTable; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = PlansTable; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = RoundedBox; LANGUAGE = ObjC; SUPERCLASS = NSBox; }, 
+        {
+            ACTIONS = {checkForUpdates = id; }; 
+            CLASS = SUUpdater; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = ShipAttributes; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = ShipList; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                addItemPlan = id; 
+                addShipPlan = id; 
+                cancel = id; 
+                deletePlan = id; 
+                planTo = id; 
+                save = id; 
+                searchItems = id; 
+                searchShips = id; 
+                searchSkills = id; 
+            }; 
+            CLASS = SkillPlanner; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "items_attributes" = NSTableView; 
+                "items_category" = NSTextField; 
+                "items_description" = NSTextView; 
+                "items_list" = NSOutlineView; 
+                "items_name" = NSTextField; 
+                "items_picture" = NSImageView; 
+                "items_required" = NSTextView; 
+                "items_search" = NSSearchField; 
+                "plan_table" = NSTableView; 
+                "plans_table" = NSTableView; 
+                "ships_attributes" = NSTableView; 
+                "ships_category" = NSTextField; 
+                "ships_list" = NSOutlineView; 
+                "ships_name" = NSTextField; 
+                "ships_picture" = NSImageView; 
+                "ships_required" = NSTextView; 
+                "ships_search" = NSSearchField; 
+                "skills_attributes" = NSTextField; 
+                "skills_category" = NSTextField; 
+                "skills_description" = NSTextField; 
+                "skills_level1" = NSTextField; 
+                "skills_level2" = NSTextField; 
+                "skills_level3" = NSTextField; 
+                "skills_level4" = NSTextField; 
+                "skills_level5" = NSTextField; 
+                "skills_list" = NSOutlineView; 
+                "skills_name" = NSTextField; 
+                "skills_plan_to" = NSComboBox; 
+                "skills_search" = NSSearchField; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = SkillTable; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {"skill_group_table" = NSTableView; "skill_table" = NSTableView; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = SkillsList; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = "_NSArrayControllerTreeNode"; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = "_NSControllerTreeProxy"; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

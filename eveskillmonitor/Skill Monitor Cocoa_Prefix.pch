@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Skill Monitor Cocoa' target in the 'Skill Monitor Cocoa' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
